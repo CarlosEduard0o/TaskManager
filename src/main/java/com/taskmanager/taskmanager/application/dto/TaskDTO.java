@@ -1,4 +1,11 @@
 package com.taskmanager.taskmanager.application.dto;
 
-public class TaskDTO {
-}
+import com.taskmanager.taskmanager.domain.enums.TaskPriority;
+import com.taskmanager.taskmanager.domain.enums.TaskStatus;
+
+public record TaskDTO (
+        String title,
+        String description,
+        TaskPriority priority,
+        TaskStatus status
+){}

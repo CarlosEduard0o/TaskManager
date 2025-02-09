@@ -1,4 +1,7 @@
 package com.taskmanager.taskmanager.application.dto;
 
-public class UserDTO {
-}
+public record UserDTO (
+        String username,
+        String email,
+        String password
+){}

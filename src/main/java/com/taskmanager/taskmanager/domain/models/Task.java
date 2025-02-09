@@ -3,11 +3,13 @@ package com.taskmanager.taskmanager.domain.models;
 import com.taskmanager.taskmanager.domain.enums.TaskPriority;
 import com.taskmanager.taskmanager.domain.enums.TaskStatus;
 import jakarta.persistence.*;
+import lombok.Data;
 
 import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "tasks")
+@Data
 public class Task {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

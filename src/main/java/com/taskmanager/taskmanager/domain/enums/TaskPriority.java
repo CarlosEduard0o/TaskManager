@@ -1,4 +1,7 @@
 package com.taskmanager.taskmanager.domain.enums;
 
-public class TaskPriority {
+public enum TaskPriority {
+    LOW,
+    MEDIUM,
+    HIGH;
 }
